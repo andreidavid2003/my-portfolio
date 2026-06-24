@@ -13,7 +13,7 @@ import {
 } from "@/types";
 import { home, person, social } from "./content";
 
-const baseURL: string = "https://andreidavid.com";
+const baseURL: string = "https://andreigabrieldavid.com";
 
 const routes: RoutesConfig = {
   "/": true,

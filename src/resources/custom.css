@@ -1,7 +1,41 @@
+:root {
+  color-scheme: dark;
+  background-color: #000;
+  color: #fff;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+option {
+  color: #fff;
+}
+
+button,
+input,
+textarea,
+select {
+  background-color: transparent;
+}
+
+[data-theme="dark"] {
+  background-color: #000;
+  color: #fff;
+}
+
 /* :root {
   /*
   /* Override default variables here */
-  /*
+/*
   --font-size-display-multiplier:   1;
   --font-size-heading-multiplier:   1;
   --font-size-body-multiplier:      1;
@@ -16,8 +50,8 @@
 
   /*
   /* Example setup for custom colors */
-  /* Generate at: https://once-ui.com/customize */
-  /*
+/* Generate at: https://once-ui.com/customize */
+/*
   --scheme-brand-100: #08002f;
   --scheme-brand-200:  #04025c;
   --scheme-brand-300:  #1f398e;

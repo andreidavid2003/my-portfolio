@@ -71,21 +71,21 @@ export default async function RootLayout({
               (function() {
                 try {
                   const root = document.documentElement;
-                  const defaultTheme = 'system';
-                  
-                  // Set defaults from config
-                  const config = ${JSON.stringify({
-                    brand: style.brand,
-                    accent: style.accent,
-                    neutral: style.neutral,
-                    solid: style.solid,
-                    "solid-style": style.solidStyle,
-                    border: style.border,
-                    surface: style.surface,
-                    transition: style.transition,
-                    scaling: style.scaling,
-                    "viz-style": dataStyle.variant,
-                  })};
+                const defaultTheme = 'dark';
+                
+                // Set defaults from config
+                const config = ${JSON.stringify({
+                  brand: style.brand,
+                  accent: style.accent,
+                  neutral: style.neutral,
+                  solid: style.solid,
+                  "solid-style": style.solidStyle,
+                  border: style.border,
+                  surface: style.surface,
+                  transition: style.transition,
+                  scaling: style.scaling,
+                  "viz-style": dataStyle.variant,
+                })};
                   
                   // Apply default values
                   Object.entries(config).forEach(([key, value]) => {
@@ -95,15 +95,14 @@ export default async function RootLayout({
                   // Resolve theme
                   const resolveTheme = (themeValue) => {
                     if (!themeValue || themeValue === 'system') {
-                      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                      return 'dark';
                     }
                     return themeValue;
                   };
                   
                   // Apply saved theme
                   const savedTheme = localStorage.getItem('data-theme');
-                  const resolvedTheme = resolveTheme(savedTheme);
-                  root.setAttribute('data-theme', resolvedTheme);
+                  const resolvedTheme = resolveTheme(savedTheme || defaultTheme);
                   
                   // Apply any saved style overrides
                   const styleKeys = Object.keys(config);
