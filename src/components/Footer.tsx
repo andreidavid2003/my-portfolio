@@ -1,13 +1,11 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { Row, ToggleButton, Text } from "@once-ui-system/core";
-import { person, routes, work, blog } from "@/resources";
+import { Row, Text } from "@once-ui-system/core";
+import { person } from "@/resources";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const pathname = usePathname() ?? "";
 
   return (
     <Row
@@ -35,32 +33,6 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
           <Text paddingX="4">{person.name}</Text>
         </Text>
-        <Row gap="4" horizontal="end" style={{ display: "flex" }}>
-          {routes["/"] && (
-            <ToggleButton
-              label="HOME"
-              href="/"
-              selected={pathname === "/"}
-              size="s"
-            />
-          )}
-          {routes["/work"] && (
-            <ToggleButton
-              label="PROJECTS"
-              href="/work"
-              selected={pathname.startsWith("/work")}
-              size="s"
-            />
-          )}
-          {routes["/blog"] && (
-            <ToggleButton
-              label="ARTICLES"
-              href="/blog"
-              selected={pathname.startsWith("/blog")}
-              size="s"
-            />
-          )}
-        </Row>
       </Row>
       <Row height="80" hide s={{ hide: false }} />
     </Row>

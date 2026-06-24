@@ -56,6 +56,7 @@ export default async function RootLayout({
       as="html"
       lang={person.locale ?? "en"}
       fillWidth
+      data-theme="dark"
       className={classNames(
         fonts.heading.variable,
         fonts.body.variable,
@@ -71,7 +72,7 @@ export default async function RootLayout({
               (function() {
                 try {
                   const root = document.documentElement;
-                const defaultTheme = 'dark';
+                root.setAttribute('data-theme', 'dark');
                 
                 // Set defaults from config
                 const config = ${JSON.stringify({
@@ -91,18 +92,6 @@ export default async function RootLayout({
                   Object.entries(config).forEach(([key, value]) => {
                     root.setAttribute('data-' + key, value);
                   });
-                  
-                  // Resolve theme
-                  const resolveTheme = (themeValue) => {
-                    if (!themeValue || themeValue === 'system') {
-                      return 'dark';
-                    }
-                    return themeValue;
-                  };
-                  
-                  // Apply saved theme
-                  const savedTheme = localStorage.getItem('data-theme');
-                  const resolvedTheme = resolveTheme(savedTheme || defaultTheme);
                   
                   // Apply any saved style overrides
                   const styleKeys = Object.keys(config);
