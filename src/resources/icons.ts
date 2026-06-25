@@ -22,7 +22,36 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { SiJavascript, SiNextdotjs, SiFigma, SiSupabase } from "react-icons/si";
+import {
+  SiJavascript,
+  SiNextdotjs,
+  SiFigma,
+  SiSupabase,
+  SiLaravel,
+  SiTailwindcss,
+  SiAlpinedotjs,
+  SiLivewire,
+  SiStatamic,
+  SiFlutter,
+  SiReact,
+  SiVuedotjs,
+  SiAngular,
+  SiSwift,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiOracle,
+  SiSqlite,
+  SiFirebase,
+  SiGit,
+  SiGitlab,
+  SiDocker,
+  SiPython,
+  SiJira,
+  SiSentry,
+  SiPhp,
+  SiMeilisearch,
+} from "react-icons/si";
 
 import {
   FaDiscord,
@@ -76,6 +105,32 @@ export const iconLibrary: Record<string, IconType> = {
   instagram: FaInstagram,
   phone: FaPhone,
   upwork: FaUpwork,
+
+  // Noile iconițe adăugate pentru secțiunea Technical Skills
+  laravel: SiLaravel,
+  tailwind: SiTailwindcss,
+  alpine: SiAlpinedotjs,
+  livewire: SiLivewire,
+  statamic: SiStatamic,
+  flutter: SiFlutter,
+  react: SiReact,
+  vue: SiVuedotjs,
+  angular: SiAngular,
+  swift: SiSwift,
+  mysql: SiMysql,
+  postgres: SiPostgresql,
+  mongodb: SiMongodb,
+  oracle: SiOracle,
+  sqlite: SiSqlite,
+  firebase: SiFirebase,
+  git: SiGit,
+  gitlab: SiGitlab,
+  docker: SiDocker,
+  python: SiPython,
+  jira: SiJira,
+  sentry: SiSentry,
+  php: SiPhp,
+  meilisearch: SiMeilisearch,
 };
 
 export type IconLibrary = typeof iconLibrary;

@@ -57,6 +57,7 @@ export default async function RootLayout({
       lang={person.locale ?? "en"}
       fillWidth
       data-theme="dark"
+      data-scroll-behavior="smooth"
       className={classNames(
         fonts.heading.variable,
         fonts.body.variable,

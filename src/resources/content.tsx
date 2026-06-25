@@ -123,7 +123,9 @@ const about: About = {
         role: "Stack Developer",
         achievements: [],
         images: [],
-      },
+        logo: "/images/omega.png", // Schimbă extensia (ex: .jpg) dacă poza e diferită
+        link: "https://omega-studio-software.com/", // Link-ul către site-ul Omega Studio
+      } as any,
     ],
   },
   studies: {
@@ -132,9 +134,118 @@ const about: About = {
     institutions: [],
   },
   technical: {
-    display: false,
+    display: true,
     title: "Technical skills",
-    skills: [],
+    skills: [
+      {
+        title: "TALL Stack",
+        description: <></>,
+        tags: [
+          { name: "Laravel", icon: "laravel", link: "https://laravel.com/" },
+          {
+            name: "Filament PHP",
+            icon: "php",
+            link: "https://filamentphp.com/",
+          },
+          {
+            name: "Livewire",
+            icon: "livewire",
+            link: "https://livewire.laravel.com/",
+          },
+          { name: "Alpine.js", icon: "alpine", link: "https://alpinejs.dev/" },
+          {
+            name: "Tailwind CSS",
+            icon: "tailwind",
+            link: "https://tailwindcss.com/",
+          },
+          { name: "Statamic", icon: "statamic", link: "https://statamic.com/" },
+        ] as any,
+      },
+      {
+        title: "Frontend",
+        description: <></>,
+        tags: [
+          { name: "Flutter", icon: "flutter", link: "https://flutter.dev/" },
+          { name: "React", icon: "react", link: "https://react.dev/" },
+          { name: "Next.js", icon: "nextjs", link: "https://nextjs.org/" },
+          { name: "Vue", icon: "vue", link: "https://vuejs.org/" },
+          { name: "Angular", icon: "angular", link: "https://angular.dev/" },
+          {
+            name: "Swift",
+            icon: "swift",
+            link: "https://developer.apple.com/swift/",
+          },
+        ] as any,
+      },
+      {
+        title: "Databases",
+        description: <></>,
+        tags: [
+          { name: "MySQL", icon: "mysql", link: "https://www.mysql.com/" },
+          {
+            name: "PostgreSQL",
+            icon: "postgres",
+            link: "https://www.postgresql.org/",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
+            link: "https://www.mongodb.com/",
+          },
+          {
+            name: "Oracle",
+            icon: "oracle",
+            link: "https://www.oracle.com/database/",
+          },
+          { name: "SQLite", icon: "sqlite", link: "https://www.sqlite.org/" },
+          {
+            name: "Firebase",
+            icon: "firebase",
+            link: "https://firebase.google.com/",
+          },
+        ] as any,
+      },
+      {
+        title: "DevOps",
+        description: <></>,
+        tags: [
+          { name: "Git", icon: "git", link: "https://git-scm.com/" },
+          { name: "GitHub", icon: "github", link: "https://github.com/" },
+          { name: "GitLab", icon: "gitlab", link: "https://about.gitlab.com/" },
+          { name: "Docker", icon: "docker", link: "https://www.docker.com/" },
+          { name: "Python", icon: "python", link: "https://www.python.org/" },
+          {
+            name: "Jira",
+            icon: "jira",
+            link: "https://www.atlassian.com/software/jira",
+          },
+        ] as any,
+      },
+      {
+        title: "Libraries",
+        description: <></>,
+        tags: [
+          { name: "Sentry", icon: "sentry", link: "https://sentry.io/" },
+          { name: "Pest", icon: "php", link: "https://pestphp.com/" },
+          {
+            name: "Larastan",
+            icon: "php",
+            link: "https://github.com/larastan/larastan",
+          },
+          {
+            name: "Meilisearch",
+            icon: "meilisearch",
+            link: "https://www.meilisearch.com/",
+          },
+          { name: "Envoyer", icon: "rocket", link: "https://envoyer.io/" },
+          {
+            name: "MailHog",
+            icon: "email",
+            link: "https://github.com/mailhog/MailHog",
+          },
+        ] as any,
+      },
+    ],
   },
 };
 
