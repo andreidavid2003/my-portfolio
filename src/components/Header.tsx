@@ -55,6 +55,8 @@ export default TimeDisplay;
 
 export const Header = () => {
   const pathname = usePathname() ?? "";
+  // Toggle to hide/show the Articles button without removing code
+  const showArticles = false;
 
   return (
     <>
@@ -136,7 +138,7 @@ export const Header = () => {
                   />
                 </div>
               )}
-              {routes["/blog"] && (
+              {showArticles && routes["/blog"] && (
                 <div style={{ flex: 1 }}>
                   <ToggleButton
                     label="ARTICLES"

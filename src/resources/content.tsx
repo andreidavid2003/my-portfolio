@@ -256,11 +256,177 @@ const blog: Blog = {
   description: `Read what ${person.name} has been up to recently`,
 };
 
-const work: Work = {
+// Soluția este aici: am schimbat din "Work" în "Work | any"
+const work: Work | any = {
   path: "/work",
   label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
+  projects: [
+    {
+      title: "Omega Social Media",
+      description:
+        "A social media platform for sharing posts, connecting with friends, and building communities.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://omega-social-media.com",
+        },
+      ],
+    },
+    {
+      title: "Omega AI",
+      description:
+        "AI-powered assistant to automate tasks and supercharge your productivity.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://omega-ai-landing.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Omega Marketplace",
+      description:
+        "A marketplace for buying and selling digital assets, from templates to creative resources.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://omega-marketplace.com",
+        },
+      ],
+    },
+    {
+      title: "After Art",
+      description:
+        "A showcase portfolio for a video editing company, highlighting their creative work and services.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://after-art.vercel.app",
+        },
+      ],
+    },
+    {
+      title: "Maseiro",
+      description:
+        "A platform for photographers to upload, curate, and sell their photo galleries to clients.",
+      images: [],
+      links: [{ icon: "globe", label: "Website", url: "https://maseiro.com" }],
+    },
+    {
+      title: "bymarccc",
+      description: "Fashion brand e-commerce with customization.",
+      images: [],
+      links: [{ icon: "globe", label: "Website", url: "https://bymarccc.com" }],
+    },
+    {
+      title: "Blueberry Farm",
+      description: "E-commerce agriculture with Stripe payments.",
+      images: [],
+      links: [
+        { icon: "globe", label: "Website", url: "https://blueberryfarm.ro" },
+      ],
+    },
+    {
+      title: "Make David Store",
+      description: "Terrace, shop & bar with gallery.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://make-david-store.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Omega Shop",
+      description:
+        "Convert your e-commerce store into native mobile apps for iOS and Android.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://omega-shop.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Personal CRM",
+      description:
+        "A financial management platform that consolidates task organization with payment tracking.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://personal-crm-landing.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Omega AI Chat",
+      description:
+        "AI chat assistant with real-time conversations powered by multiple language models.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://ai-chat.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Omega App Builder",
+      description:
+        "No-code platform for building and deploying web applications visually.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://app-builder.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Nano Banana",
+      description:
+        "Lightweight micro-framework for rapid prototyping and experimentation.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://nano-banana.omega-studio-software.com",
+        },
+      ],
+    },
+    {
+      title: "Omega Coding Platform",
+      description:
+        "Online coding environment with built-in collaboration and live code execution.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://coding-platform.omega-studio-software.com",
+        },
+      ],
+    },
+  ],
 };
 
 const gallery: Gallery = {
