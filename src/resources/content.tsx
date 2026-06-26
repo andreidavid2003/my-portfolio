@@ -427,6 +427,86 @@ const work: Work | any = {
       ],
     },
   ],
+  personalProjects: [
+    {
+      title: "medappoint",
+      description:
+        "A full-stack clinic management platform built with Spring Boot and React.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/medappoint",
+        },
+      ],
+    },
+    {
+      title: "Student-Course Management System",
+      description:
+        "A Java course management system with automated student assignments and grading.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/Student-Course-Management-System",
+        },
+      ],
+    },
+    {
+      title: "Social Media App",
+      description:
+        "A Java-based mini social media application demonstrating core OOP principles and a follow system.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/Social-Media-App",
+        },
+      ],
+    },
+    {
+      title: "eBanking App",
+      description:
+        "A Java eBanking application featuring fund transfers, stock trading, and premium accounts.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/eBanking-App",
+        },
+      ],
+    },
+    {
+      title: "Scheduler",
+      description:
+        "A Linux CLI scheduler application built in C/C++ featuring task management, dynamic memory allocation, and bitwise optimization.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/Scheduler",
+        },
+      ],
+    },
+    {
+      title: "Pointers and Data Structures in C",
+      description:
+        "A tape manipulation system featuring queued execution and dual-stack undo/redo.",
+      images: [],
+      links: [
+        {
+          icon: "globe",
+          label: "Website",
+          url: "https://github.com/andreidavid2003/Pointers-and-data-structures-C",
+        },
+      ],
+    },
+  ],
 };
 
 const gallery: Gallery = {
